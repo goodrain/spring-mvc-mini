@@ -39,7 +39,7 @@ public class MailSender {
             message.setSubject(subject);
             message.setText(text);
             message.setRecipients(Message.RecipientType.TO, toAddress);
-            Transport.send(message);
+            //Transport.send(message);
             
             LOG.info("Send Mail Done: " + fromAddress + " to" + toAddress.toString());
 
